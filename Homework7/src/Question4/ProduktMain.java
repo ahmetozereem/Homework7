@@ -30,23 +30,32 @@ public class ProduktMain {
 		System.out.println (arr1 [4]);
 		System.out.println(" ");
 		
+		
+		  Arrays.sort(arr1); System.out.println (Arrays.toString(arr1));
+		  System.out.println(" ");
+		 
+		
+		arr1 [3]="zudi";
+		
 		Arrays.sort(arr1);
-		System.out.println (Arrays.toString(arr1));
-		System.out.println(" ");
-		
-		arr1 [2]="Audi";
 		
 		System.out.println (Arrays.toString(arr1));
 		System.out.println(" ");
 		
-		if (Arrays.binarySearch(arr1, "Audi")>=0) {
+		System.out.println(Arrays.binarySearch(arr1, "zudi"));
+		
+		if (Arrays.binarySearch(arr1, "zudi")>=0) {
 			
 		System.out.println("Değişiklik yaptıgınız urun listeye eklenmistir");
 			
 		}
 		
-					
+		else {
+			System.out.println("Değişiklik yaptıgınız urun listeye eklenmemiştir");
 		}
+							
+		}
+	
 
 	}
 
